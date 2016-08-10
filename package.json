@@ -1,0 +1,24 @@
+{
+  "name": "eventmap",
+  "version": "0.0.1",
+  "description": "An intelligent map of local events",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funkjunky/eventmap.git"
+  },
+  "keywords": [
+    "events",
+    "map",
+    "local"
+  ],
+  "author": "Jason McCarrell <jason.abz+npm@gmail.com> (http://www.jayeh.ca)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/funkjunky/eventmap/issues"
+  },
+  "homepage": "https://github.com/funkjunky/eventmap#readme"
+}
