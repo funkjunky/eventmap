@@ -1,0 +1,30 @@
+TODO
+—
+
+ *- ensure mapping and location work
+ - Display map of current location [leaflet using OpenStreetMaps]
+	*- create an action for updatingLocation
+	*- create a reducer for handling the location updating
+	*- create an action for updateGPSLocation
+		*- setup thunk so we can do async actions (actions.jsx)
+		*- create promise for getting navigator.location and use it in action
+		*- if success, then dispatch action with location, otherwise default to 45.507 lat, -73.571 long
+	*- default latlng everywhere include hydration
+	*- test
+	*- commit
+	- call action to set location and zoom, based on panning and zooming events on map
+	- test
+	- commit
+
+ - Try various overlays
+	- circle
+	- building
+	- street segment
+	- block created by street segments
+
+ - Make up events to show on map, different kinds that well overlap nicely [with tags, dates, and times]
+
+ - show made up events on map
+
+How to show event information? A list?
+Filters? How would a user use this map???

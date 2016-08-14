@@ -1,7 +1,7 @@
 import {combineReducers} from 'redux';
 
-const dummy = () => ({});
+import latlng from './reducers/latlng.js';
 
-const reducers = combineReducers({dummy});
+const reducers = combineReducers({latlng});
 
 export default reducers;
