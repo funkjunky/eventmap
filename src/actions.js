@@ -3,16 +3,23 @@ import { LATLNG } from './constants/defaults.js';
 
 export const updateLocation = (latlng) => ({
     type: Types.UPDATE_LATLNG,
-    latlng: latlng,
+    latlng,
+});
+
+export const updateZoom = (zoom) => ({
+    type: Types.UPDATE_ZOOM,
+    zoom,
 });
 
 export const updateLocationByGps = () => 
     dispatch => {
         navigator.geolocation.getCurrentPosition((position) => {
-            console.log('position: ', position, [position.coords.latitude, position.coords.longitude]);
+            console.log('gps: ', position, [position.coords.latitude, position.coords.longitude]);
             dispatch(updateLocation([position.coords.latitude, position.coords.longitude]));
         }, () => {
-            dispatch(updateLocation(LATLNG));
+            //dispatch(updateLocation(LATLNG));
+            //TODO: show an error
+            console.warning('Couldnt get GPS location...');
         });
-        return {then: ()=>{}};
+        return {then: ()=>{}};  //TODO: return a proper promise.
     };

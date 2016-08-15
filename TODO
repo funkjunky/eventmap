@@ -12,9 +12,9 @@ TODO
 	*- default latlng everywhere include hydration
 	*- test
 	*- commit
-	- call action to set location and zoom, based on panning and zooming events on map
-	- test
-	- commit
+	*- call action to set location and zoom, based on panning and zooming events on map
+	*- test
+	*- commit
 
  - Try various overlays
 	- circle
